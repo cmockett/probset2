@@ -8,17 +8,39 @@
 
 // }
 
-var swapCase = function(str){
-	// var myArray = str.split("")
-	// var newArray = []
+// var swapCase = function(str){
+// 	var myArray = str.split("")
+// 	// var newArray = []
 
-	for (var i =0; i<str.length; i++){
-		if (str[i] === str[i].toUpperCase()){
-			str[i] = str[i].toLowerCase()
-		} else if (str[i] === str[i].toLowerCase()) {
-			str[i]= str[i].toUpperCase()
+// 	for (var i =0; i<str.length; i++){
+// 		if (myArray[i] === myArray[i].toUpperCase()){
+// 			myArray[i] = myArray[i].toLowerCase()
+// 		} else if (myArray[i] === myArray[i].toLowerCase()) {
+// 			myArray[i]= myArray[i].toUpperCase()
+// 		}
+// 	}
+// 	return myArray.join("")
+// }
 
-		}
-	}
-	return str
-}
+// var letterCount = function (str){
+// 	var wordArray = str.split(" ")
+// 	var count = 0
+// 	for(var i =0; i<wordArray.length; i++){
+// 		// var letterArray= wordArray[i].split("")
+// 		var word = wordArray[i]
+// 		for(var j =0; j<word.length; j++)
+// 			var letter=word[j];
+// 			for 
+
+// 	}
+
+// }
+
+var letterCount = _.chain("aa bbb ccc")
+	_.lines("")
+	_.chars()
+
+
+	_.value()
+
+console.log(letterCount)
