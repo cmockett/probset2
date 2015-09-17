@@ -23,24 +23,45 @@
 // }
 
 // var letterCount = function (str){
-// 	var wordArray = str.split(" ")
 // 	var count = 0
+// 	var wordArray = str.split(" ")
 // 	for(var i =0; i<wordArray.length; i++){
-// 		// var letterArray= wordArray[i].split("")
-// 		var word = wordArray[i]
-// 		for(var j =0; j<word.length; j++)
-// 			var letter=word[j];
-// 			for 
+// 		var letterArray= wordArray[i].split("")
+// 		// var word = wordArray[i]
+// 		// for(var j =0; j<word.length; j++)
+// 		// 	var letter=word[j];
+// 		// 	for 
 
+// console.log(letterArray)
 // 	}
-
+// console.log(wordArray)
 // }
 
-var letterCount = _.chain("aa bbb ccc")
-	_.lines("")
-	_.chars()
 
+// var letterCount = function (str){
+	
+// 	str = str.toLowerCase()
+// 	var strObject = {}
+// 	var wordArray = str.split(" ")
+// 	for (var i =0; i<wordArray.length; i++){
+// 		var letterArray=wordArray[i].split("")
+// 		var letterCheck = function (i){
+// 		for (var j=0; j<letterArray.length; j++){
+// 		strObject[letterArray[j]]=0;
+// 	}
+// 	}
+// 	letterCheck()
+// }
 
-	_.value()
+// 		console.log(strObject)
+// 		console.log(letterArray)
+// 		console.log(wordArray)
+// }
 
-console.log(letterCount)
+var letterCount = function(str){
+	var wordArray = str.split(" ")
+	wordArray.forEach()
+
+}
+
+// https://teamtreehouse.com/community/how-to-count-the-number-of-times-a-specific-character-appears-in-a-string
