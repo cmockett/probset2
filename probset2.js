@@ -57,11 +57,46 @@
 // 		console.log(letterArray)
 // 		console.log(wordArray)
 // }
+// https://teamtreehouse.com/community/how-to-count-the-number-of-times-a-specific-character-appears-in-a-string
+
+// var letterCount = function(str){
+// 	var wordArray = str.split(" ")
+// 	// wordArray.forEach()
+// 	// str.match(/str[i]/).length
+// 	console.log(wordArray)
+// }
 
 var letterCount = function(str){
-	var wordArray = str.split(" ")
-	wordArray.forEach()
-
+	var wordArray = str.split(" ");
+	var letterCountArray = []
+	for (var i=0; i<wordArray.length; i++){
+		var letterCountObject = {};
+		for (var j=0; j<wordArray[i].length; j++){
+			if(!letterCountObject[ wordArray[i][j] ]){
+				letterCountObject[wordArray[i][j]]=0;
+			}
+			letterCountObject[wordArray[i][j]]++
+		}
+		letterCountArray.push(letterCountObject)
+	}
+		var charCountArray = []
+	for (var i=0; i<letterCountArray.length; i++){
+		var repeated = 0
+		for (var character in letterCountArray[i]){
+			if(letterCountArray[i][character]>1){
+				repeated++
+			}
+		}
+		charCountArray.push(repeated)
+	}
+	var winningIndex=-1
+	var max=0
+	for(var i=0; i<charCountArray.length;i++){
+		if(charCountArray[i]>max){
+			max=charCountArray[i]
+			winningIndex=i
+		}
+	}
+	return winningIndex === -1 ? winningIndex : wordArray[winningIndex]	
 }
 
-// https://teamtreehouse.com/community/how-to-count-the-number-of-times-a-specific-character-appears-in-a-string
